@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import "./styles.css";
 
 function App() {
+	console.log('asd');
   return (
     <div className="App">
       <h1>Hello CodeSandbox</h1>
