@@ -1,17 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import "./styles.css";
+import AppHeader from './components/app-header';
+import SearchPanel from './components/search-panel';
+import TodoList from './components/todo-list';
 
-function App() {
-	console.log('asd');
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
+const App = () => {
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+	return (
+		<div>
+			<AppHeader />
+			<SearchPanel />
+			<TodoList />
+		</div>
+	);
+};
+
+ReactDOM.render(<App />,
+	 document.getElementById('root'));
